@@ -10,11 +10,12 @@ app.use(express.static(join(__dirname, 'public')))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
-app.get('/notes', (req, res) => {
-  res.json(notes)
+app.get('/api/notes', (req, res) => {
+  res.json(db)
 })
 
-require("./routes/htmlRoutes")(app);
+require("./routes/htmlRoutes")(app)
 require('./public/assets/js/index')(app)
+require("./routes/apiRoutes")(app);
 
-app.listen(3000)
+app.listen(process.env.PORT || 3000)
