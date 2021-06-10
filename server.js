@@ -14,7 +14,7 @@ app.get('/api/notes', (req, res) => {
   res.json(db)
 })
 
-require('./public/assets/js/index')(app)
+// require('./public/assets/js/index')(app)
 require("./routes/htmlRoutes")(app)
 require("./routes/apiRoutes")(app);
 
