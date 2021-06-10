@@ -27,8 +27,8 @@ app.post('/api/notes', function (req, res) {
 app.delete('api/notes/:id', function (res, req) {
   notesData.Data.splice(req.params.id, 1)
   fs.writeFile(
-    path.resolve(__dirname, '../db/db.json')
-    JSON.stringify(notesData)
+    path.resolve(__dirname, '../db/db.json'),
+    JSON.stringify(notesData),
     function (error) {
       if (error) console.error(error)
       res.json(notesData)

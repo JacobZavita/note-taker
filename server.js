@@ -14,8 +14,8 @@ app.get('/api/notes', (req, res) => {
   res.json(db)
 })
 
-require("./routes/htmlRoutes")(app)
 require('./public/assets/js/index')(app)
+require("./routes/htmlRoutes")(app)
 require("./routes/apiRoutes")(app);
 
 app.listen(process.env.PORT || 3000)
