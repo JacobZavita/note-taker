@@ -1,5 +1,5 @@
 # Note Taker
-Github Repo: https://github.com/alwayssmellitfirst/Note Taker
+Github Repo: https://github.com/alwayssmellitfirst/note-taker
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 ## Description
 Thiss application lets you write, save, and delete notes on a website.
